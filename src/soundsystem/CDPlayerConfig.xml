@@ -8,5 +8,5 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
     <bean id="compactDisc" class="soundsystem.SgtPepers"/>
 
-    <bean id="cdPlayer" class="soundsystem.CDPlayer" c:cd-ref="compactDisc" />
+    <bean id="cdPlayer" class="soundsystem.CDPlayer" c:_0-ref="compactDisc" />
 </beans>
