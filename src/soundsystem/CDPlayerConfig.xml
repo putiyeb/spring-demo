@@ -10,6 +10,16 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
     <bean id="cdPlayer" class="soundsystem.CDPlayer" c:_0-ref="compactDisc" />
 
-    <bean id="compactDisc" class="soundsystem.BlackDisc" c:_0="Sgt. Pepper's Lonely Hearts Club Band" c:artist="The Beatles"/>
+    <bean id="compactDisc" class="soundsystem.BlackDisc">
+        <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band" />
+        <constructor-arg value="The Beatles" />
+        <constructor-arg>
+            <list>
+                <value>Song1</value>
+                <value>Song2</value>
+                <value>Song3</value>
+            </list>
+        </constructor-arg>
+    </bean>
 
 </beans>
